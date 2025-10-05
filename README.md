@@ -49,15 +49,15 @@ The application is deployed on AWS with a secure and scalable network architectu
 
 VPC: A dedicated Virtual Private Cloud (VPC) hosts all application resources securely.
 
-Subnets:
+**Subnets:**
 
-Public Subnet:
+**Public Subnet:**
 
 Hosts the application server (Spring Boot backend + frontend).
 
 Assigned a public IP for internet access.
 
-Private Subnet:
+**Private Subnet:**
 
 Hosts the MySQL database server.
 
@@ -67,7 +67,7 @@ No direct internet access for enhanced security.
 
 The application server in the public subnet communicates with the MySQL server in the private subnet securely.
 
-Security group rules allow:
+**Security group rules allow:**
 
 Inbound MySQL traffic (port 3306) only from the public instance IP of the application server.
 
