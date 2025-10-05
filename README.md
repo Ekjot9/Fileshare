@@ -78,3 +78,6 @@ All other traffic to the private subnet is blocked from the internet.
 The database is not exposed publicly.
 
 Only the application server can access the database, maintaining secure separation.
+
+
+### due to obvious reasons of aws billing the aws resources have been deleted but you can create your own resources as per description given in this readme file
