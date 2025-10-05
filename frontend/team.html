@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Join or Create Team - FileShare</title>
+  <link rel="stylesheet" href="team.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="blob-container">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+    <div class="blob blob4"></div>
+    <div class="blob blob5"></div>
+  </div>
+
+  <div class="team-container">
+    <h1> Welcome to FileShare Teams</h1>
+
+    <div class="toggle-buttons">
+  <button id="joinTab" class="active" onclick="showJoinForm()">Join Team</button>
+  <button id="createTab" onclick="showCreateForm()">Create Team</button>
+  <button id="adminTab" onclick="showAdminJoinForm()">Admin Join</button>
+</div>
+<div id="popup" class="popup"></div>
+
+<div class="form-wrapper">
+  <!-- Join Form -->
+  <form id="joinForm" class="team-form">
+    <h2>Join a Team</h2>
+    <input type="text" id="joinTeamName" placeholder="Team Name" required />
+    <input type="password" id="joinTeamPassword" placeholder="Team Password" required />
+    <button type="button" onclick="joinTeam()">Join</button>
+  </form>
+
+  <!-- Create Form -->
+  <form id="createForm" class="team-form hidden">
+    <h2>Create a Team</h2>
+    <input type="text" id="createTeamName" placeholder="Team Name" required />
+    <input type="password" id="createTeamPassword" placeholder="Team Password" required />
+    <button type="button" onclick="createTeam()">Create</button>
+  </form>
+
+  <!-- Admin Join Form -->
+  <form id="adminForm" class="team-form hidden">
+    <h2>Admin Join</h2>
+    <input type="text" id="adminTeamName" placeholder="Team Name" required />
+    <input type="password" id="adminTeamPassword" placeholder="Team Password" required />
+    <button type="button" onclick="adminJoinTeam()">Admin Join</button>
+  </form>
+</div>
+
+  <script src="team.js"></script>
+</body>
+</html>
+     
+
+
+      <!-- Create Form -->
+    
+      <form id="createForm" class="team-form hidden">
+        <h2>Create a Team</h2>
+        <input type="text" id="createTeamName" placeholder="Team Name" required />
+        <input type="password" id="createTeamPassword" placeholder="Team Password" required />
+        <button type="button" onclick="createTeam()">Create</button>
+      </form>
+      
+
+        <!-- Admin Join Form -->
+
+      <form id="adminForm" class="team-form hidden">
+    <h2>Admin Join</h2>
+    <input type="text" id="adminTeamName" placeholder="Team Name" required />
+    <input type="password" id="adminTeamPassword" placeholder="Team Password" required />
+    <button type="button" onclick="adminJoinTeam()">Admin Join</button>
+  </form>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <header>
+      <h2 id="team-name">Team</h2>
+      <button onclick="logout()" class="logout-btn">Logout</button>
+    </header>
+
+    <main>
+      
+
+      <section class="files-section">
+        <h3>📁 Files</h3>
+        <div class="upload-box">
+          <input type="file" id="fileInput" />
+          <button onclick="uploadFile()">Upload</button>
+        </div>
+
+        <div id="uploadResult" class="upload-result"></div>
+
+        <div class="delete-box">
+          <input type="text" id="fileIdToDelete" placeholder="File ID to delete" />
+          <button onclick="deleteFile()">Delete</button>
+        </div>
+
+        <div class="uploaded-files">
+
+</div>
+
+
+      </section>
+    </main>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

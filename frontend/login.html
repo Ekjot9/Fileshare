@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login - FileShare</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="panel register-panel">
+      <div class="cloud-label">☁ Sign Up</div>
+      <input type="text" id="registerUsername" placeholder="Username" />
+      <input type="password" id="registerPassword" placeholder="Password" />
+      <button onclick="register()">Create Account</button>
+    </div>
+
+    <div class="welcome-panel">
+      <h1>Hi there,</h1>
+      <p>Welcome to <strong>FileShare</strong></p>
+      <blockquote>“Sharing is the essence of growth.”</blockquote>
+    </div>
+
+    <div class="panel login-panel">
+      <div class="cloud-label">☁ Login</div>
+      <input type="text" id="loginUsername" placeholder="Username" />
+      <input type="password" id="loginPassword" placeholder="Password" />
+      <button onclick="login()">Login</button>
+    </div>
+  </div>
+
+  <div id="popup" class="popup"></div>
+  <script src="login.js"></script>
+</body>
+</html>
